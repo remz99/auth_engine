@@ -1,0 +1,8 @@
+Description:
+    Generate config and initializer for a client of AuthEngineProvider.
+
+Example:
+    rails generate auth_engine:install
+
+    This will create:
+        config/initializers/omniauth.rb
