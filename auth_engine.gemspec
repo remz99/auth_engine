@@ -9,16 +9,16 @@ Gem::Specification.new do |s|
   s.version     = AuthEngine::VERSION
   s.authors     = ["Remy Flatt"]
   s.email       = ["remy@90seconds.tv"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of AuthEngine."
-  s.description = "TODO: Description of AuthEngine."
+  s.homepage    = "https://github.com/remz99/auth_engine"
+  s.summary     = "Gem for AuthEngine to be used with AuthProvider."
+  s.description = "work in progress"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "~> 4.2.6"
-  s.add_dependency "omniauth", "~> 1.2.1"
-  s.add_dependency "omniauth-oauth2", "~> 1.1.2"
+  s.add_dependency "omniauth", "~> 1.3.1"
+  s.add_dependency "omniauth-oauth2", "~> 1.3.1"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency 'rspec-rails', '~> 2.14.2'

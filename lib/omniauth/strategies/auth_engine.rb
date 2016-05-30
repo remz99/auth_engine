@@ -1,5 +1,9 @@
 require 'omniauth-oauth2'
 
+# Examples
+# FB: https://github.com/mkdynamic/omniauth-facebook/blob/master/lib/omniauth/strategies/facebook.rb
+# LinkedIn: https://github.com/arunagw/omniauth-twitter/blob/master/lib/omniauth/strategies/twitter.rb
+#
 module OmniAuth
   module Strategies
     class AuthEngine < OmniAuth::Strategies::OAuth2
@@ -16,7 +20,7 @@ module OmniAuth
       }
 
       uid {
-        raw_user_info['id']
+        raw_user_info['user_service_key']
       }
 
       info do
